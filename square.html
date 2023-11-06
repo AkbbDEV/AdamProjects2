@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head> 
+        <title>square</title>
+        <style>
+        #box2{
+        text-align: center;
+        
+        }
+        #yellow{
+
+        background-color: red;
+        height: 402px;
+        width: 402px;
+        margin-left: 510px;
+        border-radius: 60px;
+        }
+        button{
+        height: 40px;
+        width: 70px;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 0px;
+        margin-top: 20px;
+        background-color: #5BC0EB;
+        color: white;
+        font-weight: bold;
+        }
+        </style>
+        <script>
+        function color(){
+    var a = document.getElementById("yellow");
+    a.style.backgroundColor = 'yellow' ;
+}
+ function colorGreen(){
+    var a = document.getElementById("yellow");
+    a.style.backgroundColor = 'Green' ;
+}
+ function colorRed(){
+    var a = document.getElementById("yellow");
+    a.style.backgroundColor = 'Red' ;
+}
+function circle(){
+    var b = document.getElementById("yellow");
+    
+}
+        </script>
+    </head> 
+    <body> <div id="box2">
+       <div id="yellow" align="center">
+       
+       </div>
+     <button align="center" onclick="color()">Yellow</button>
+     <button align="center" onclick="colorRed()">Red</button>
+     <button align="center" onclick="colorGreen()">Green</button>
+     <button align="cenetr" onclick="circle()"> Circle</button>
+     </div>
+    </body>
+</html>

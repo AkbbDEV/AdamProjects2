@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Monkey by Adam</title>
+    <style>
+      body {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("https://img.freepik.com/free-vector/space-background-with-planet-landscape_107791-6146.jpg");
+      }
+      button {
+        border-radius: 17px;
+        height: 50px;
+        width: 100px;
+        background-color: rgb(109, 198, 233);
+        font-size: 20px;
+        font-weight: bolder;
+        color: white;
+        border-style: none;
+        border-color: white;
+        margin-top: 5px;
+      }
+      #container {
+        position: relative;
+        height: 500px;
+        width: 500px;
+        border-radius: 20px;
+        border-color: grey;
+        border-width: 5px;
+        background-image: url("data:image/jpeg;base64,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");
+        margin-bottom: 10px;
+        
+      }
+      #character {
+        margin-top: 400px;
+        background-image: url('monkey.jpg');
+        height: 80px;
+        width: 50px;
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px ;
+      }
+      h1{
+        margin-top: 0;
+        color: white;
+    }
+    p{
+        margin-top: 0;
+        color: white;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">Space Monkey</h1>
+    <p align="center">A boring game made by Adam Bodden</p>
+  <div id="gameContainer" align="center">
+    <div id="container" align="center">
+      <div id="character">
+    </div>
+    </div>
+    <div id="controls">
+      <button onclick="right()">Right</button>
+      <button onclick="left()">Left</button>
+    </div>
+    </div>
+  </div>
+    <script>
+      var pos = 0;
+      function right() {
+            var a = document.getElementById("character");
+            pos += 80;
+            a.style.marginLeft = pos+"px";
+        }
+      function left() {
+        var c = document.getElementById("character");
+        pos -= 80;
+        c.style.marginLeft = pos+"px";
+      }
+     
+    </script>
+  </body>
+</html>
